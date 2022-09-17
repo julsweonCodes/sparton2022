@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>결혼 청첩장</title>
+    <style>
+        * {
+            font-family: 'IBM Plex Sans KR', sans-serif;
+        }
+        body, h1, h2, h3, p, a {
+            font-size: 16px;
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        .wrap {
+            width: 400px;
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .wrap > h1 {
+            border: none;
+            background-color: indianred;
+            font-weight: 800;
+            padding: 5px 5px 5px 10px;
+
+        }
+        
+        .wrap > h1 > span {
+            background-color: white;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding-right: 1px;
+            padding-left: 1px;
+        }
+        .pic {
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            font-weight: 600;
+        }
+        .pic > #p1 {
+            color: rgb(61, 61, 61);
+            font-weight: 600;
+            margin: 5px 10px 0px 0px;
+            
+        }
+        .pic > #p1 > span {
+            margin-top: 5px;
+            color: rgb(197, 0, 0);
+            font-weight: 700;
+        }
+        .pic > img {
+            border: 3px solid yellowgreen;
+        }
+        .pic > #p2 {
+            color: gray;
+            font-size: 10px;
+        }
+        
+        .name {
+            color: rgb(119, 119, 119);
+            font-size: 25px;
+            font-weight: normal;
+
+            border-top: 1px solid rgb(119, 119, 119);
+            border-bottom: 1px solid rgb(119, 119, 119);
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        hr {
+            border-top: none;
+            border-bottom: indianred;
+        }
+
+        .main {
+            background-color: indianred;
+            width: 400px;
+            padding: 5px 5px 5px 10px;
+            line-height: 1.5;
+
+        }
+        #cntr {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 15px;
+
+            font-size: 20px;
+            background-color: khaki;
+            font-weight: 600;
+        }
+
+        .main > span {
+            background-color: white;
+            width: auto;
+            margin: auto;
+            color: rgb(71, 71, 71);
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
+        .myInput > p > input {
+            border: 1px solid lightgreen;
+            margin-bottom: 5px;
+            
+            width: 200px;
+        }
+
+        .myInput > p > textarea {
+            border: 1px solid lightgreen;
+            margin-bottom: 5px;
+            
+            width: 200px;
+            height: 200px;
+        }
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .myBtn {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 15px;
+
+            font-size: 20px;
+            background-color: khaki;
+            font-weight: 600;
+
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1><span>정연이와 영현이</span>의 그.. 뭐시기를 축하해주세요.💐</h1>
+        <div class="pic">
+            정연이의 마음을 훔쳐버린 그 사람...<br/>
+            <p id="p1">그 사람과의 <span >피의 맹세의 시간</span></p>
+            <img src="mafia.png" >
+            <p id="p2">아이마 스틸잇 맘을 훔쳐 유알거너러빗</p>
+
+            <p id="p1"> 12.19 그 장소에서... 우리 만나요</p>
+        </div>
+        <div class="name">
+            julsweon & youngK
+        </div>
+        <div class="main">
+            <p id="cntr">INVITATION</p>
+            <span>안녕하십니까.</span> <br> 졸립니다. 아우아우
+            저희가 피의 맹세를 하게 되었거든요
+            <br> 어우어우 너무 졸리네요.
+            <br><br> <p id="cntr">아무튼간에 행복하세요 ㅎㅎ</p>
+        </div>
+        <div class="bottom">
+            <p id="cntr"> 축하 메시지를 남겨주세요! </p>
+            <div class="myInput">
+                <p><input type="text" placeholder="NAME"></p>
+                <p><textarea placeholder="Leave your message"></textarea></p>
+            </div>
+            <button class="myBtn">Send</button>
+    
+        </div>
+    </div>
+</body>
+</html>
